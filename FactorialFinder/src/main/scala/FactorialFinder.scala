@@ -2,10 +2,10 @@ package com.knoldus.factorialfinder
 
 import scala.annotation.tailrec
 
-object FactorialFinder {
+case class FactorialFinder(number: Int) {
 
   // to find factorial of a number
-  def factorial(number: Int): Int = {
+  def factorial(): Int = {
     if(number<0) throw new IllegalArgumentException()
     else{
       @tailrec
